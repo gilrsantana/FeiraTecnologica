@@ -89,7 +89,7 @@ btnPdf.onclick = function () {
   rowCell2.style.fontSize = "18px";
   rowCell2.style.width = "100%";
   rowCell2.style.lineHeight = "2.5";
-  rowCell2.textContent = "Certificamos que " + name + " participou da Semana Tecnológica com a matrícula " + matricula + ".";
+  rowCell2.textContent = "Certificamos, que " + name + ", com a matrícula " + matricula + ", participou da Semana Tecnológica.";
   row2.appendChild(rowCell2);
   tableElement.appendChild(row2);
 
