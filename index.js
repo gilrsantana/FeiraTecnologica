@@ -126,6 +126,7 @@ btnPdf.onclick = function () {
   certificado.style.backgroundRepeat = 'no-repeat';
   certificado.style.backgroundPosition = 'center';
   certificado.appendChild(tableElement);
+
   const content = certificado;
   const options = {
     margin: [10, 10, 10, 10],
@@ -140,6 +141,8 @@ btnPdf.onclick = function () {
   };
 
   html2pdf().set(options).from(content).save();
+  
+  btnPdf.disabled = true;
 };
 
 
